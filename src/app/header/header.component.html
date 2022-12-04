@@ -2,20 +2,32 @@
     <div class="flex items-center justify-between relative mx-16 py-4">
         <h2 class="font-bold text-xl">Hotelaria</h2>
 
-        <ul class="absolute grid w-full md:w-2/5 mt-[55px] md:mt-0 md:relative md:flex justify-center md:justify-between text-center top-0" *ngIf="menu">
+        <ul class="absolute grid w-full md:w-2/5 mt-[55px] md:mt-0 md:relative md:flex justify-center md:justify-between text-center top-0 gap-6"
+            *ngIf="menu">
             <div class="grid md:flex justify-center gap-4 md:gap-8">
-                <a href="#" class="font-semibold text-sm md:text-base"><li>Home</li></a>
-                <a href="#" class="font-semibold text-sm md:text-base"><li>Sobre</li></a>
-                <a href="#" class="font-semibold text-sm md:text-base"><li>Promoções</li></a>
-                <a href="#" class="font-semibold text-sm md:text-base"><li>COVID</li></a>
+                <a href="#" class="font-semibold text-sm md:text-base">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="font-semibold text-sm md:text-base">
+                    <li>Sobre</li>
+                </a>
+                <a href="#" class="font-semibold text-sm md:text-base">
+                    <li>Promoções</li>
+                </a>
+                <a href="#" class="font-semibold text-sm md:text-base">
+                    <li>COVID</li>
+                </a>
             </div>
 
             <div>
-                <button class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-xl text-white md:opacity-90 hover:opacity-100">Login</button>
+                <button
+                    class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-xl text-white md:opacity-90 hover:opacity-100">
+                    Login
+                </button>
             </div>
         </ul>
 
-        <span class="block md:hidden cursor-pointer material-symbols-outlined" (click)="menuToogle()">
+        <span class="block md:hidden cursor-pointer material-symbols-outlined" translate="no" (click)="menuToogle()">
             menu
         </span>
     </div>
