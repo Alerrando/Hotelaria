@@ -1,6 +1,6 @@
 <header class="fixed w-full h-auto bg-white">
     <div class="flex items-center justify-between relative md:mx-16 py-4">
-        <h2 class="font-bold text-2xl font-mono">Hotelaria</h2>
+        <h2 class="font-bold text-2xl font-mono ml-4 md:ml-0">Hotelaria</h2>
 
         <ul class="absolute grid bg-white w-screen md:w-2/5 h-auto mt-[64px] pb-8 md:pb-0 md:mt-0 md:relative md:flex justify-center md:justify-between items-center text-center top-0 gap-6"
             *ngIf="menu">
@@ -21,13 +21,15 @@
 
             <div>
                 <button
-                    class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-2xl text-white md:opacity-90 hover:opacity-100">
+                    class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-2xl text-white md:opacity-90 hover:opacity-100"
+                    translate="no"
+                    >
                     Login
                 </button>
             </div>
         </ul>
 
-        <span class="block md:hidden cursor-pointer material-symbols-outlined" translate="no" (click)="menuToogle()">
+        <span class="block md:hidden cursor-pointer material-symbols-outlined mr-4 md:mr-0" translate="no" (click)="menuToogle()">
             menu
         </span>
     </div>
