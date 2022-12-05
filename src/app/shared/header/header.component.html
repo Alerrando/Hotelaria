@@ -5,7 +5,7 @@
         <ul class="absolute grid bg-white w-screen md:w-2/5 h-auto mt-[64px] pb-8 md:pb-0 md:mt-0 md:relative md:flex justify-center md:justify-between items-center text-center top-0 gap-6"
             *ngIf="menu">
             <div class="grid md:flex justify-center gap-4 md:gap-8 font-mono">
-                <a href="#" class="font-semibold text-base md:text-lg">
+                <a routerLink="/"class="font-semibold text-base md:text-lg">
                     <li>Home</li>
                 </a>
                 <a href="#" class="font-semibold text-base md:text-lg">
@@ -20,12 +20,14 @@
             </div>
 
             <div>
-                <button
-                    class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-2xl text-white md:opacity-90 hover:opacity-100"
-                    translate="no"
-                    >
-                    Login
-                </button>
+                <a routerLink="/login">
+                    <button
+                        class="bg-blue-600 px-28 py-[4px] md:px-6 md:py-1 rounded-2xl text-white md:opacity-90 hover:opacity-100"
+                        translate="no"
+                        >
+                        Login
+                    </button>
+                </a>
             </div>
         </ul>
 
