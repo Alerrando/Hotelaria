@@ -1,13 +1,34 @@
 <main class="h-screen w-screen flex items-center text-white">
-    <section class="h-full w-48 bg-blue-500 grid gap-4">
-        <header class="w-full h-14 flex items-center justify-center bg-blue-600">
-        </header>
+  <div
+    class="w-full absolute md:hidden top-0 h-10 px-1 py-4 text-black z-20 material-symbols-outlined cursor-pointer"
+    translate="no"
+    (click)="menuToggleHandler()"
+  >
+    menu
+  </div>
+  <section
+    class="absolute md:relative h-full w-52 bg-blue-500 block overflow-hidden"
+    *ngIf="menuToggle"
+  >
+    <header class="w-full h-14 flex items-center justify-center bg-blue-600">
+      <h2 class="text-xl">Administração</h2>
+    </header>
 
-        <section>
-            
-        </section>
-    </section>
-    <section>
+    <section class="w-full h-full pt-4">
+      <ul class="grid gap-2">
+        <li class="w-full bg-blue-600 py-1">
+          <a class="pl-4" href="">Home</a>
+        </li>
 
+        <li class="w-full grid gap-2 py-1 bg-blue-600">
+          <a class="pl-4" href="">Hóspedes/Quartos</a>
+          <ul class="grid gap-2 bg-blue-500">
+            <li class="pl-8">Hóspedes Cadastrados</li>
+            <li class="pl-8">Quartos Disponiveis</li>
+          </ul>
+        </li>
+      </ul>
     </section>
+  </section>
+  <section></section>
 </main>
