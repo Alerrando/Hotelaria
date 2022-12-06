@@ -1,11 +1,46 @@
 <app-header></app-header>
 
 <main class="w-full h-screen flex items-center justify-center pt-[64px] text-white">
-    <div class="w-2/4 h-3/5 bg-white">
-        <header class="w-full h-auto px-4 py-2 text-black" translate="no">
-            <span class="material-symbols-outlined text-3xl">
-                arrow_back
-            </span>
-        </header>
+    <div class="w-auto md:w-[46%] h-auto md:h-3/5 bg-white">
+        <div class="grid gap-4 px-6 py-6">
+            <header class="w-full h-auto text-black" translate="no">
+                <h2 class="font-serif text-base md:text-lg">Faça seu login ou crie sua conta</h2>
+            </header>
+
+            <section class="w-full h-auto grid gap-6 md:gap-0 md:flex items-start">
+                <form class="h-full w-full max-w-[250px] text-black grid gap-3">
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite seu email</label>
+                        <input class="outline-none h-7 md:h-10 px-2 border border-zinc-400" type="text" placeholder="Digite seu email">
+                    </div>
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite sua senha</label>
+                        <input class="outline-none h-7 md:h-10 px-2 border border-zinc-400" type="password" placeholder="Digite sua senha">
+                    </div>
+
+                    <button class="px-4 py-1 bg-blue-700 text-white">Login</button>
+                </form>
+
+                <div class="block h-[1px] md:h-full w-full md:w-[1px] md:mx-8 bg-zinc-500"></div>
+
+                <div class="w-full grid gap-3 text-black">
+                    <p>Ou conecte com outra conta</p>
+
+                    <div class="grid gap-2">
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-[rgba(0, 0, 0, 0.2)]">
+
+                        </div>
+                        
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-[rgba(0, 0, 0, 0.2)]">
+
+                        </div>
+
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-[rgba(0, 0, 0, 0.2)]">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 </main>
