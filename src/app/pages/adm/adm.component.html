@@ -7,25 +7,42 @@
     menu
   </div>
   <section
-    class="absolute md:relative h-full w-52 bg-blue-500 block overflow-hidden"
+    class="absolute md:relative top-0 h-full w-64 bg-[#7386D5] block overflow-hidden"
     *ngIf="menuToggle"
   >
-    <header class="w-full h-14 flex items-center justify-center bg-blue-600">
-      <h2 class="text-xl">Administração</h2>
+    <header class="w-full h-14 flex items-center justify-center bg-[#6D7FCC]">
+      <h2 class="text-xl font-bold">Administração</h2>
     </header>
 
-    <section class="w-full h-full pt-4">
-      <ul class="grid gap-2">
-        <li class="w-full bg-blue-600 py-1">
+    <section class="w-full h-full pt-4 font-serif">
+      <ul class="grid">
+        <li class="w-full bg-[#6D7FCC] border-b border-b-slate-400 py-1">
           <a class="pl-4" href="">Home</a>
         </li>
 
-        <li class="w-full grid gap-3 py-1 bg-blue-600">
+        <li class="w-full grid gap-[9px] py-2 border-b border-b-slate-400 bg-[#6D7FCC]">
           <a class="pl-4" href="">Hóspedes/Quartos</a>
-          <ul class="grid gap-2 bg-blue-500">
-            <li class="pl-8">Hóspedes Cadastrados</li>
-            <li class="pl-8">Quartos Disponiveis</li>
+          <ul class="grid bg-[#7386D5]">
+            <li class="text-sm cursor-pointer pl-8 py-2">Hóspedes Cadastrados</li>
+            <li class="text-sm cursor-pointer pl-8 py-2">Quartos Disponiveis</li>
           </ul>
+        </li>
+
+        <li class="w-full grid gap-[9px] py-2 border-b border-b-slate-400 bg-[#6D7FCC]">
+          <a class="pl-4" href="">Funções</a>
+          <ul class="grid bg-[#7386D5]">
+            <li class="text-sm cursor-pointer pl-8 py-2">Dar baixa</li>
+            <li class="text-sm cursor-pointer pl-8 py-2">Pedidos</li>
+            <li class="text-sm cursor-pointer pl-8 py-2">Soliçitação de mudança de quarto</li>
+          </ul>
+        </li>
+
+        <li class="w-full bg-[#6D7FCC] py-2">
+          <a class="pl-4" href="">Funcionários</a>
+        </li>
+
+        <li class="w-full bg-[#6D7FCC] border-b border-b-slate-400 py-2">
+          <a class="pl-4" href="">Suporte</a>
         </li>
       </ul>
     </section>
