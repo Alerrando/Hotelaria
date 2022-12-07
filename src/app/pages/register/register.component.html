@@ -1,3 +1,72 @@
 <app-header></app-header>
 
-<main class="w-full h-screen flex items-center justify-center pt-[64px] text-white"></main>
+<main class="w-full h-screen flex items-center justify-center pt-[64px] text-white">
+    <div class="w-[380px] md:w-[46%] h-[500px] md:h-auto bg-white overflow-auto rounded-2xl">
+        <div class="grid gap-4 px-6 py-6">
+            <header class="w-full h-auto text-black" translate="no">
+                <h2 class="font-serif text-base md:text-lg">Crie sua conta</h2>
+            </header>
+
+            <section class="w-full h-auto grid gap-6 md:gap-0 md:flex items-start">
+                <form class="h-full w-full max-w-[250px] text-black grid gap-3">
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite seu nome completo</label>
+                        <input class="outline-none h-8 md:h-10 px-2 border border-zinc-400" type="text" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite seu email</label>
+                        <input class="outline-none h-8 md:h-10 px-2 border border-zinc-400" type="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite sua senha</label>
+                        <input class="outline-none h-8 md:h-10 px-2 border border-zinc-400" type="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="grid gap-2 md:gap-[1px]">
+                        <label>Digite seu telefone</label>
+                        <input class="outline-none h-8 md:h-10 px-2 border border-zinc-400" type="tel" placeholder="(##)#####-####" required>
+                    </div>
+
+                    <button type="submit" class="px-4 py-1 bg-blue-700 text-white">Registrar</button>
+                </form>
+
+                <div class="block h-[1px] md:h-full w-full md:w-[1px] md:mx-8 bg-zinc-500"></div>
+
+                <div class="w-full grid gap-3 text-black">
+                    <p>Ou conecte com outra conta</p>
+
+                    <div class="grid gap-2">
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-sombreado">
+                            <div class="w-full h-full flex items-center gap-6 ml-2">
+                                <div class="google h-6 w-6 flex items-center justify-center"></div>
+                                <p class="text-sm md:text-[15px]">Registre-se com o Google</p>
+                            </div>
+                        </div>
+                        
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-sombreado">
+                            <div class="w-full h-full flex items-center gap-6 ml-2">
+                                <div class="facebook h-6 w-6 flex items-center justify-center"></div>
+                                <p class="text-sm md:text-[15px]">Registre-se com o Facebook</p>
+                            </div>
+                        </div>
+
+                        <div class="w-full h-10 border border-zinc-400 cursor-pointer hover:bg-sombreado">
+                            <div class="w-full h-full flex items-center gap-6 ml-2">
+                                <div class="apple h-6 w-6 flex items-center justify-center"></div>
+                                <p class="text-sm md:text-[15px]">Registre-se com o Apple</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-full md:pt-[35%]">
+                        <form class="flex gap-2 text-black">
+                            <input type="checkbox" name="termos" class="w-[25px]">
+                            <label class="text-sm" for="termos">Aceito os <a href="#" class="text-blue-600">Termos e condições</a>  de privacidade da Hostelaria</label>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <h3 class="text-black mt-4">Já tem conta? <a routerLink="/login" class="text-blue-600 cursor-pointer">Faça o login</a></h3>
+        </div>
+    </div>
+</main>
