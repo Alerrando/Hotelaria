@@ -1,13 +1,13 @@
 <main class="h-screen w-screen flex items-center text-white overflow-x-hidden">
   <div
-    class="w-full absolute md:hidden top-0 h-10 px-1 py-4 text-black z-20 material-symbols-outlined cursor-pointer"
+    class="w-full absolute md:hidden top-0 h-10 px-1 py-4 text-black z-40 material-symbols-outlined cursor-pointer"
     translate="no"
     (click)="menuToggleHandler()"
   >
     menu
   </div>
   <section
-    class="absolute md:relative top-0 h-full w-64 bg-[#7386D5] block overflow-hidden"
+    class="absolute md:relative top-0 h-full w-64 bg-[#7386D5] block overflow-hidden z-20"
     *ngIf="menuToggle"
   >
     <header class="w-full h-14 flex items-center justify-center bg-[#6D7FCC]">
@@ -146,7 +146,7 @@
           </div>
       </section>
 
-      <div class="w-full h-auto flex justify-center">
+      <div class="w-full h-auto flex justify-center pb-4 md:pb-0">
         <div class="w-[50%] md:w-[15%] flex items-center justify-between text-base md:text-lg">
             <span class="material-symbols-outlined" translate="no">arrow_back</span>
             <span>Andar 1</span>
