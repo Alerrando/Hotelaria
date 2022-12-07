@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AdmComponent {
   menuToggle:boolean = this.windowsToogle();
+  quarto1 = '../assets/imagem_fundo.jpg'
 
   menuToggleHandler(){
     this.menuToggle == true ? this.menuToggle = false : this.menuToggle = true;

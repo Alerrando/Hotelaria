@@ -1,0 +1,6 @@
+@for $var from 1 to 7 {
+    .quarto#{$var}{
+        background: url(assets/img/quarto#{$var}.jpg);
+        background-size: cover;
+    }
+}

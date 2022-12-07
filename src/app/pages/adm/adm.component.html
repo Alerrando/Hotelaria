@@ -1,4 +1,4 @@
-<main class="h-screen w-screen flex items-center text-white">
+<main class="h-screen w-screen flex items-center text-white overflow-x-hidden">
   <div
     class="w-full absolute md:hidden top-0 h-10 px-1 py-4 text-black z-20 material-symbols-outlined cursor-pointer"
     translate="no"
@@ -11,7 +11,7 @@
     *ngIf="menuToggle"
   >
     <header class="w-full h-14 flex items-center justify-center bg-[#6D7FCC]">
-      <h2 class="text-xl font-bold">Administração</h2>
+      <h2 class="text-xl font-bold" translate="no">Administração</h2>
     </header>
 
     <section class="w-full h-full pt-4 font-serif">
@@ -47,5 +47,111 @@
       </ul>
     </section>
   </section>
-  <section></section>
+  <section class="w-full h-full grid md:block text-black">
+      <header class="w-full h-20 grid items-center border-b border-b-zinc-200 justify-center">
+        <h1 class="text-2xl md:text-4xl font-bold">Relátorios de andares</h1>
+      </header>
+
+      <section class="max-w-[1200px] h-4/5 mx-auto px-2 md:px-4 py-6">
+          <div class="h-auto grid grid-cols-projetos gap-6">
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto1 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 001
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-red-600">Ocupado</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto2 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 002
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-red-600">Ocupado</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto3 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 003
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-red-600">Ocupado</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto4 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 004
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-green-600">Livre</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto5 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 005
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-green-600">Livre</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="max-h-[200px] h-[200px] relative text-center group border border-zinc-400 rounded-xl">
+              <div class="w-full h-full">
+                <div class="quarto6 rounded-xl w-full h-full"></div>
+              </div>
+
+              <div class="absolute w-full border-none outline-none ease-in-out bottom-0 py-4 text-white md:hidden md:group-hover:block transition-all">
+                <h2 class="font-roboto text-xl font-bold">
+                  ID: 006
+                </h2>
+                <span class="font-playfair font-bold text-xs">
+                  Situação: <span class="text-red-600">Ocupado</span>
+                </span>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <div class="w-full h-auto flex justify-center">
+        <div class="w-[50%] md:w-[15%] flex items-center justify-between text-base md:text-lg">
+            <span class="material-symbols-outlined" translate="no">arrow_back</span>
+            <span>Andar 1</span>
+            <span class="material-symbols-outlined" translate="no">arrow_forward</span>
+        </div>
+      </div>
+  </section>
 </main>
